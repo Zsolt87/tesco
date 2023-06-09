@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/fruits/91b7363f-f1eb-4dc7-b582-e9e4c0624b97/price"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "currency": "GBP",
+      "price": "16.23"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

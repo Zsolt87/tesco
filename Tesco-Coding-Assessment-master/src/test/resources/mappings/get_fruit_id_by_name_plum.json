@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/fruits/plum"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "f2853638-9fda-4296-9fbd-4bb4fd62d3df"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

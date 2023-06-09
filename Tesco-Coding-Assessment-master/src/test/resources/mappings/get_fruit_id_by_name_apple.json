@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/fruits/apple"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "721fdf98-41b3-4b5d-b0f3-b5e633aa08a0"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

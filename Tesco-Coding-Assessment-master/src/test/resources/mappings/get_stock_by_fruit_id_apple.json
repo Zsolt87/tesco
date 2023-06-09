@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/stock/721fdf98-41b3-4b5d-b0f3-b5e633aa08a0"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": [
+      {
+        "id": "store1",
+        "stock": 1
+      },
+      {
+        "id": "store2",
+        "stock": 2
+      },
+      {
+        "id": "store3",
+        "stock": 0
+      }
+    ],
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

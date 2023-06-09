@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/fruits/orange"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": "91b7363f-f1eb-4dc7-b582-e9e4c0624b97"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

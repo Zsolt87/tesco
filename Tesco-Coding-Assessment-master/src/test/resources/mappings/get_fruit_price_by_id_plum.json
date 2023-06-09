@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/fruits/f2853638-9fda-4296-9fbd-4bb4fd62d3df/price"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "currency": "USD",
+      "price": "8.13"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
