@@ -1,6 +1,6 @@
 fruitAggregatedService:
   integration:
     stockClient:
-      url: http://localhost:8989/fruits
+      url: http://localhost:8789/stock
     fruitClient:
-      url: http://localhost:8989/stocks
+      url: http://localhost:8889/fruits
