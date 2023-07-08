@@ -30,6 +30,7 @@ public class FruitService {
     }
 
     public AggregatedFruitDetail getAggregatedFruitResponse(String name){
+        log.info("Getting fruit details");
         ResponseEntity<FruitIdResponse> fruitIdByNameResponse = fruitClient.getFruitIdByName(name);
         handleUnsuccessfulResponse(fruitIdByNameResponse, "Unable to retrieve fruit id by name");
 
@@ -38,11 +39,13 @@ public class FruitService {
         ResponseEntity<FruitPriceResponse> priceByFruitIdResponse = fruitClient.getPriceByFruitId(fruitId);
         handleUnsuccessfulResponse(priceByFruitIdResponse, "Unable to retrieve fruit price by id");
 
+        log.info("Getting stock details");
         ResponseEntity<List<ShopStockResponse>> stockResponse = stockClient.getStocksByFruitId(fruitId);
         handleUnsuccessfulResponse(stockResponse, "Unable to retrieve stock info by id");
 
         FruitPriceResponse priceByFruitId = priceByFruitIdResponse.getBody();
         List<ShopStockResponse> shopStock = stockResponse.getBody();
+        log.info("Aggregate results");
         AggregatedFruitDetail result = new AggregatedFruitDetail(fruitId,
                 name,
                 CurrencyEnum.valueOf(priceByFruitId.getCurrency()),

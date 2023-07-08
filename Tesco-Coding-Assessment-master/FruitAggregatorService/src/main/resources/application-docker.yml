@@ -1,0 +1,6 @@
+fruitAggregatedService:
+  integration:
+    stockClient:
+      url: http://stock:8080/stock
+    fruitClient:
+      url: http://fruit:8080/fruit

@@ -18,13 +18,18 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
         </processorPath>
-        <module name="tesco-web-test" />
+        <module name="FruitService" />
+        <module name="StockService" />
+        <module name="FruitAggregatorService" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="tesco-web-test" options="-parameters" />
+      <module name="FruitAggregatorService" options="-parameters" />
+      <module name="FruitService" options="-parameters" />
+      <module name="StockService" options="-parameters" />
+      <module name="tesco-web-test" options="" />
     </option>
   </component>
 </project>

@@ -3,4 +3,4 @@ fruitAggregatedService:
     stockClient:
       url: http://localhost:8789/stock
     fruitClient:
-      url: http://localhost:8889/fruits
+      url: http://localhost:8889/fruit
